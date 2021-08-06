@@ -3,7 +3,8 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-header, main {
+header,
+main {
   display: flex;
   justify-content: center;
 }
@@ -16,6 +17,11 @@ header, main {
 a {
   text-decoration: none;
   color: white;
+}
+
+hr {
+    border: 1px solid #d1d1d1;
+    margin-top: 20px;
 }
 
 /* Banner Style */
@@ -133,10 +139,32 @@ footer div img {
   border-radius: 30px;
 }
 
+/* All Fifa styles */
+.blogs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
 
+.blog {
+  width: 570px;
+  height: 617px;
+  padding-top: 20px;
+}
+
+.blog img {
+  width: 546px;
+  height: 409px;
+  border-radius: 9px;
+}
+
+.blog a {
+    color: rgb(40, 74, 148);
+}
 
 /************** style for Tablet devices *************/
 @media only screen and (max-width: 1024px) {
+
+
   .banner {
     background-color: #2d25a0;
     display: grid;
@@ -186,6 +214,21 @@ footer div img {
     width: 32px;
     height: 32px;
   }
+
+  /* All Fifa styles for tablet view */
+  .blogs {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .blog {
+    width: 682px;
+    height: auto;
+  }
+
+  .blog img {
+    width: 680px;
+  }
 }
 
 /************** style for mobile devices *************/
@@ -227,4 +270,20 @@ footer div img {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
+
+    /* All Fifa styles for mobile view */
+    .blogs {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+      }
+    
+      .blog {
+        width: 270px;
+        height: auto;
+      }
+    
+      .blog img {
+        width: 246px;
+        height: 154px;
+      }
 }
