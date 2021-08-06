@@ -20,8 +20,8 @@ a {
 }
 
 hr {
-    border: 1px solid #d1d1d1;
-    margin-top: 20px;
+  border: 1px solid #d1d1d1;
+  margin-top: 20px;
 }
 
 /* Banner Style */
@@ -158,13 +158,34 @@ footer div img {
 }
 
 .blog a {
-    color: rgb(40, 74, 148);
+  color: rgb(40, 74, 148);
+}
+
+/* FIFA PARTNERS styles */
+.partner-title {
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.partners {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.partner {
+  width: 178px;
+  height: 93px;
+  padding: 0 90px;
+}
+
+.partner img {
+  width: 114px;
+  height: 57px;
 }
 
 /************** style for Tablet devices *************/
 @media only screen and (max-width: 1024px) {
-
-
   .banner {
     background-color: #2d25a0;
     display: grid;
@@ -229,6 +250,13 @@ footer div img {
   .blog img {
     width: 680px;
   }
+
+  /* FIFA PARTNERS styles */
+  .partners {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
 }
 
 /************** style for mobile devices *************/
@@ -271,19 +299,31 @@ footer div img {
     grid-template-columns: repeat(1, 1fr);
   }
 
-    /* All Fifa styles for mobile view */
-    .blogs {
+  /* All Fifa styles for mobile view */
+  .blogs {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .blog {
+    width: 270px;
+    height: auto;
+  }
+
+  .blog img {
+    width: 246px;
+    height: 154px;
+  }
+
+    /* FIFA PARTNERS styles */
+    .partners {
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
       }
-    
-      .blog {
-        width: 270px;
-        height: auto;
-      }
-    
-      .blog img {
-        width: 246px;
-        height: 154px;
+
+      .partner {
+        width: 142px;
+        height: 80px;
+        padding: 0;
       }
 }
